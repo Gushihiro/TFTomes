@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export function Navbar() {
@@ -5,7 +6,7 @@ export function Navbar() {
   return (
     <div className="navbar bg-neutral">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">TF | Tomes</a>
+        <Link href="/" className="btn btn-ghost normal-case text-xl">TF | Tomes</Link>
       </div>
       <div className="flex-none gap-2">
         <div className="form-control">
