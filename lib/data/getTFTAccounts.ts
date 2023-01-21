@@ -26,7 +26,7 @@ export async function getTFTSummoner(params: IGetTFTSummonerParams) {
   return res.json();
 }
 
-export const getSummonerRegions = cache((): IRegion[] => [
+export const getSummonerRegions = (): IRegion[] => [
   {
     platformID: 'NA1',
     region: 'North America'
@@ -91,4 +91,8 @@ export const getSummonerRegions = cache((): IRegion[] => [
     platformID: 'TH2',
     region: 'Thailand'
   }
-])
+];
+
+export function fetchRegions(): IRegion[] {
+  return getSummonerRegions();
+}

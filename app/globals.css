@@ -104,6 +104,10 @@ a {
   text-decoration: none;
 }
 
+.search-button {
+  background-color: hsl(var(--b1) / var(--tw-bg-opacity));
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
