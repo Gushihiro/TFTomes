@@ -8,9 +8,9 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1>Welcome to TF | Tomes</h1>
+      <h1 className="leading-6">Welcome to TF | Tomes</h1>
+      <Search />
       <h2>Search for Summoners or Create an account for more in-depth information.</h2>
-      <Search dropdownStyles={styles.searchDropdown} />
     </main>
   )
 }
